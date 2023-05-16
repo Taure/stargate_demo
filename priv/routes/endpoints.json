@@ -1,0 +1,19 @@
+[{"prefix": "",
+  "security": false,
+  "routes": [
+             {
+              "endpoint": "/v1",
+              "method": "GET",
+              "module": "stargate_main_controller",
+              "function": "index",
+              "backend": [
+                          {
+                          "url_pattern": "/",
+                          "method": "GET",
+                          "host": "http://localhost:8080"
+                          }
+                        ]
+             }
+          ]
+  }
+]
